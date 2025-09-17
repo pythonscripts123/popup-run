@@ -201,8 +201,8 @@ def check_close(event):
     typed += char
     typed = typed[-5:]
 
-    # Fix exit and close detection (only when typed, not keysym)
-    if typed == "close" or typed == "exit":
+    # Fix cheese and close detection (only when typed, not keysym)
+    if typed == "brick" or typed == "cheese":
         play_shutdown_sound()
         win.destroy()
         return
@@ -382,4 +382,5 @@ def create_window():
 #by pythonscripts123
 
 create_window()
+
 
